@@ -10,7 +10,9 @@
  * @author: Ewen Elder <ewen at jainaewen dot com> <glomainn at yahoo dot co dot uk>
  * @version: 1.1.1 (2011-07-29)
 **/
-(function ($)
+var $ = django.jQuery;
+
+(function ()
 {
 	$.fn.iframePostForm = function (options)
 	{
@@ -88,4 +90,4 @@
 		post : function () {},               // Form onsubmit.
 		complete : function (response) {}    // After response from the server has been received.
 	};
-})(jQuery);
+})();
